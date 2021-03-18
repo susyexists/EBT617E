@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# latex files (pdf also) except source
+.aux
+.log
+.out
+.pdf
