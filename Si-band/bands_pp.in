@@ -1,0 +1,5 @@
+&bands
+outdir = './outdir'
+prefix = 'Si'
+filband = 'Si.bands.dat'
+/
