@@ -7,13 +7,12 @@
     &system
         ibrav=1, celldm(1) =20, 
         nat=2, ntyp=1,
-        ecutwfc=10.0
+        ecutwfc=50
     /
     &electrons
-        conv_thr=1e-6
+        conv_thr=1e-8
     /
     &ions
-        ion_dynamics='bfgs'
     /
     ATOMIC_SPECIES
      H  1.00784  H.pbe-kjpaw_psl.1.0.0.UPF
