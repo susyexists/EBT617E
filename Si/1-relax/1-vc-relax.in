@@ -1,0 +1,39 @@
+&control
+    calculation = 'vc-relax'
+    prefix = 'Si'
+    outdir = './outdir'
+    pseudo_dir = '../PP'
+    etot_conv_thr = 1e-5
+    forc_conv_thr = 1e-4
+/
+&system
+    ibrav=0
+    nat=2
+    ntyp=1
+    ecutwfc=100
+/
+&electrons
+    conv_thr=1e-8
+/
+
+&ions
+/
+
+&cell
+/
+
+ATOMIC_SPECIES
+ Si  28.0855  Si.pbe-n-kjpaw_psl.1.0.0.UPF
+
+
+CELL_PARAMETERS (angstrom) 
+0.0000000000	2.7343639977	2.7343639977
+2.7343639977	0.0000000000	2.7343639977
+2.7343639977	2.7343639977	0.0000000000
+
+
+ATOMIC_POSITIONS (alat)
+ Si 0.00 0.00 0.00
+ Si 0.25 0.25 0.25
+K_POINTS (automatic)
+  8 8 8 0 0 0
