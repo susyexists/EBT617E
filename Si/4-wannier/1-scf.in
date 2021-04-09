@@ -2,7 +2,7 @@
     calculation = 'scf'
     prefix = 'Si'
     outdir = './outdir'
-    pseudo_dir = './'
+    pseudo_dir = '../PP'
     etot_conv_thr = 1e-5
     forc_conv_thr = 1e-4
 /
@@ -10,7 +10,8 @@
     ibrav=0
     nat=2
     ntyp=1
-    ecutwfc=100
+    ecutwfc=60
+    nbnd=8
 /
 &electrons
     conv_thr=1e-8
@@ -36,4 +37,4 @@ Si           -0.0518049113       -0.0518049113       -0.0518049113
 Si            0.3018210967        0.3018210967        0.3018210967
 
 K_POINTS (automatic)
-  8 8 8 0 0 0
+  12 12 12 0 0 0

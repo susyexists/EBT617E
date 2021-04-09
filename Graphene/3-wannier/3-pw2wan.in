@@ -1,0 +1,9 @@
+&inputpp 
+   outdir = './outdir'
+   prefix = 'Graphene'
+   seedname = 'Graphene'
+   write_mmn = .true.
+   write_amn = .true.
+   write_spn = .false.
+   write_unk = .false.
+/

@@ -1,0 +1,5 @@
+&bands
+outdir = './outdir'
+prefix = 'Graphene'
+filband = 'Graphene.bands.dat'
+/

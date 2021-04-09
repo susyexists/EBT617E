@@ -1,0 +1,41 @@
+&control
+    calculation = 'nscf'
+    prefix = 'Si'
+    outdir = './outdir'
+    pseudo_dir = '../PP'
+    etot_conv_thr = 1e-5
+    forc_conv_thr = 1e-4
+/
+&system
+    ibrav=0
+    nat=2
+    ntyp=1
+    ecutwfc=60
+    occupations='tetrahedra'
+    nbnd=12
+/
+&electrons
+    conv_thr=1e-8
+/
+
+&ions
+/
+
+&cell
+/
+
+ATOMIC_SPECIES
+ Si  28.0855  Si.pbe-n-kjpaw_psl.1.0.0.UPF
+
+
+CELL_PARAMETERS (angstrom)
+  -0.000191034   2.734636542   2.734636542
+   2.734636542  -0.000191034   2.734636542
+   2.734636542   2.734636542  -0.000191034
+
+ATOMIC_POSITIONS (alat)
+Si           -0.0518049113       -0.0518049113       -0.0518049113
+Si            0.3018210967        0.3018210967        0.3018210967
+
+K_POINTS (automatic)
+  12 12 12 0 0 0

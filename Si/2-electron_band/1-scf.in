@@ -1,8 +1,8 @@
 &control
-    calculation = 'relax'
+    calculation = 'scf'
     prefix = 'Si'
     outdir = './outdir'
-    pseudo_dir = './'
+    pseudo_dir = '../PP'
     etot_conv_thr = 1e-5
     forc_conv_thr = 1e-4
 /
