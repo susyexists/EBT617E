@@ -7,8 +7,9 @@ import sys
 
 
 datafile = 'Si.bands.dat.gnu'
-fermi =  7.0932
-symmetryfile = 'bands_pp.out'
+fermi =   6.0865
+symmetryfile = '5-bands_pp.out'
+kpath = ['W', 'G', 'X', 'W',"L","G"]
 bool_shift_efermi = True
 fig, ax = plt.subplots()
 
@@ -112,7 +113,7 @@ def bndplot(datafile, fermi, symmetryfile, subplot, **kwargs):
 
 # bndplot(datafile,fermi,symmetryfile,ax)
 bndplot(datafile, fermi, symmetryfile, ax, shift_fermi=fermi,
-        color='black', linestyle='solid', name_k_points=['W', 'G', 'X', 'W',"L","G"])
+        color='black', linestyle='solid', name_k_points=kpath)
 
 plt.ylim(-15, 10)
 #plt.title("NbSe2 No SOC")

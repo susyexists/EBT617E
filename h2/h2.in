@@ -1,0 +1,25 @@
+
+    &control
+    calculation = 'scf'
+    prefix = 'h2'
+    pseudo_dir = './'
+    /
+    &system
+        ibrav=1, celldm(1) =20, 
+        nat=2, ntyp=1,
+        ecutwfc=10.0
+    /
+    &electrons
+        conv_thr=1e-6
+    /
+    &ions
+        ion_dynamics='bfgs'
+    /
+    ATOMIC_SPECIES
+     H  1.00784  H.pbe-kjpaw_psl.1.0.0.UPF
+    ATOMIC_POSITIONS (angstrom)
+     H 0.00 0.00 0.00
+     H 1.4 0.00 0.00
+    K_POINTS (automatic)
+      1 1 1 0 0 0 
+    
