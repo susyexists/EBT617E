@@ -2,11 +2,8 @@ num_bands         = 12
 num_wann          = 8
 dis_win_max       = 17
 dis_froz_max      = 6.4
-dis_num_iter      = 120
-dis_mix_ratio     = 1
 
 num_iter          = 500
-num_print_cycles  = 50
 
 begin unit_cell_cart
 angstrom
