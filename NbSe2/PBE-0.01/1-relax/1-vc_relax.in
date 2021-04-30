@@ -1,0 +1,52 @@
+&CONTROL
+  calculation = 'vc-relax'
+  etot_conv_thr =   1d-05
+  forc_conv_thr =   1d-04
+  outdir = './outdir/'
+  prefix = 'NbSe2'
+  pseudo_dir = '../PP/'
+  tprnfor = .true.
+  tstress = .true.
+/
+
+&SYSTEM
+  degauss =   0.01
+  ecutwfc =   100
+  ibrav = 0
+  nat = 6
+  ntyp = 2
+  occupations = 'smearing'
+  smearing = 'fd'
+/
+
+&ELECTRONS
+  conv_thr =   1d-08
+  mixing_mode='local-TF'
+/
+
+
+&IONS
+/
+&CELL
+/
+
+ATOMIC_SPECIES
+Nb     92.90 Nb.pbe-mt_fhi.UPF
+Se     78.96 Se.pbe-mt_fhi.UPF
+
+ATOMIC_POSITIONS (crystal)
+Nb	0.0000000000	0.0000000000	0.2500000000
+Nb	0.0000000000	0.0000000000	0.7500000000
+Se	0.6666666667	0.3333333333	0.6275920000
+Se	0.3333333333	0.6666666667	0.1275920000
+Se	0.6666666667	0.3333333333	0.8724080000
+Se	0.3333333333	0.6666666667	0.3724080000
+
+CELL_PARAMETERS (angstrom)
+3.4894037800	0.0000000000	0.0000000000
+-1.7447018900	3.0219123175	0.0000000000
+0.0000000000	0.0000000000	13.7569990000
+
+
+K_POINTS automatic
+24 24 12 0 0 0

@@ -1,0 +1,55 @@
+&TB_FILE
+Hrfile = 'NbSe2_hr.dat'
+/
+
+
+!> bulk band structure calculation flag
+&CONTROL
+BulkBand_calc         = T
+BulkBand_plane_calc = T
+/
+
+&SYSTEM
+NumOccupied =  7        ! NumOccupied
+SOC = 0                 ! without
+E_FERMI = 0.2436      ! e-fermi
+/
+
+&PARAMETERS
+Nk1 =1001           ! number k points
+Nk2 =1001
+/
+
+LATTICE
+Angstrom
+   3.485548338   0.000000000  -0.000000000
+  -1.742774169   3.018573407   0.000000000
+  -0.000000000  -0.000000000  14.067535935
+
+ATOM_POSITIONS
+         3
+Crystal
+Nb            0.0000000000        0.0000000000        0.5000000000
+Se            0.3333333333        0.6666666667        0.3801905240
+Se            0.3333333333        0.6666666667        0.6198094760
+
+PROJECTORS
+     5 3 3
+Nb dxy dxz dyz dx2-y2 dz2
+Se px py pz
+Se px py pz
+
+SURFACE
+  1 0 0
+  0 1 0
+
+KPLANE_BULK
+    0.00  0.00  0.00   ! Original point for 3D k plane
+    3.00  0  0.00   ! The first vector to define 3d k space plane
+    0  3.00  0.00   ! The second vector to define 3d k space plane
+
+    KPATH_BULK            ! k point path
+    3              ! number of k line only for bulk band
+G 0.0000000000    0.0000000000     0.0000000000  M 0.0000000000     0.5000000000     0.0000000000  
+M 0.0000000000    0.5000000000     0.0000000000  K 0.3333333333     0.3333333333     0.0000000000
+K 0.3333333333    0.3333333333     0.0000000000  G 0.0000000000     0.0000000000     0.0000000000

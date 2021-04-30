@@ -1,0 +1,5 @@
+&input
+  fildyn = 'NbSe2.dyn'
+  zasr = 'simple'
+  flfrc = 'NbSe2.fc'
+/
