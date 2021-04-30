@@ -1,0 +1,15 @@
+&inputph
+  prefix   = 'Si',
+  fildyn   = 'Si.dyn',
+  amass(1) = 28.0855,
+  outdir   = './outdir'
+  ldisp    = .true.,
+  trans    = .true.,
+  fildvscf = 'dvscf',
+  nq1=3,
+  nq2=3,
+  nq3=3,
+  tr2_ph   =  1d-14
+ /
+
+
