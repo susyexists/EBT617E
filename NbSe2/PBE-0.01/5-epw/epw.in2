@@ -1,0 +1,50 @@
+--
+&inputepw
+  prefix      = 'NbSe2',
+  amass(1)    = 92.90,
+  amass(2)    = 78.96
+  outdir      = './'
+  dvscf_dir   = '../4-phonon/save'
+
+  elph        = .true.
+  kmaps       = .true.
+  epbwrite    = .false.
+  epbread     = .false.
+  epwwrite    = .false.
+  epwread     = .true.
+
+  wannierize  = .false.
+  nbndsub     =  11
+
+  fermi_energy = 0.2433
+
+
+  
+  elecselfen  = .false. 
+  phonselfen  = .true.
+  delta_approx=.false.
+  a2f         = .false.
+  band_plot   = .true.
+  prtgkk      = .false.
+
+
+  fsthick     = 1 ! eV
+  temps      = 2 ! K
+  degaussw    = 0.1 ! eV
+
+  filqf="NbSe2_band.kpt"
+
+  nkf1         = 48
+  nkf2         = 48
+  nkf3         = 1
+  !nqf1         = 12
+  !nqf2         = 12
+  !nqf3         = 1
+
+  nk1         = 24
+  nk2         = 24
+  nk3         = 1
+  nq1         = 12
+  nq2         = 12
+  nq3         = 1
+ /

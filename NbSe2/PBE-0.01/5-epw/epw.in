@@ -1,0 +1,60 @@
+--
+&inputepw
+  prefix      = 'NbSe2',
+  amass(1)    = 92.90,
+  amass(2)    = 78.96
+  outdir      = './'
+  dvscf_dir   = '../4-phonon/save'
+
+  elph        = .true.
+  kmaps       = .false.
+  epbwrite    = .true.
+  epbread     = .false.
+  epwwrite    = .true.
+  epwread     = .false.
+
+  wannierize  = .true.
+  nbndsub     =  11
+  
+  
+  fermi_energy = 0.2433
+
+
+  num_iter    = 300
+  dis_win_max = 10
+  dis_win_min = -10
+  dis_froz_min= -0.5
+  dis_froz_max= 1.2
+  proj(1)     = 'Nb:d'
+  proj(2)     = 'Se:p'
+  wdata(1) = 'bands_plot = .true.'
+  wdata(2) = 'begin kpoint_path'
+  wdata(3) = 'G 0.00 0.00 0.00 M 0.00 0.50 0.00'
+  wdata(4) = 'M 0.00 0.50 0.00 K 0.33 0.33 0.00'
+  wdata(5) = 'K 0.33 0.33 0.00 G 0.00 0.00 0.00'
+  wdata(6) = 'end kpoint_path'
+  wdata(7) = 'bands_num_points = 100'
+
+  elecselfen  = .false. 
+  phonselfen  = .false.
+  a2f         = .false.
+
+  fsthick     = 1 ! eV
+  temps      = 2 ! K
+  degaussw    = 0.05 ! eV
+
+  nkf1         = 48
+  nkf2         = 48
+  nkf3         = 1
+  nqf1         = 24
+  nqf2         = 24
+  nqf3         = 1
+
+  nk1         = 24
+  nk2         = 24
+  nk3         = 1
+  nq1         = 12
+  nq2         = 12
+  nq3         = 1
+ /
+
